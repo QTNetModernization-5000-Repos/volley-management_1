@@ -1,0 +1,8 @@
+# installs correct dotnet tool
+
+steps:
+  - task: UseDotNet@2
+    displayName: Use .NET Core SDK ${{ parameters.version }}
+    inputs:
+      version: ${{ parameters.version }}
+      includePreviewVersions: true
